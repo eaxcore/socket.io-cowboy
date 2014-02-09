@@ -22,6 +22,7 @@ start() ->
     ok = application:start(public_key),
     ok = application:start(ssl),
     ok = application:start(ranch),
+    ok = application:start(cowlib),
     ok = application:start(cowboy),
     ok = application:start(socketio).
 
